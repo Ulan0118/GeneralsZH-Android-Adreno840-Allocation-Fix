@@ -170,7 +170,7 @@ public class TouchControlsActivity extends Activity {
     }
 
     private void addNewButton() {
-        if (config.buttons.size() >= 20) {
+        if (config.buttons.size() >= 50) {
             Toast.makeText(this, R.string.touch_too_many_buttons, Toast.LENGTH_SHORT).show();
             return;
         }
