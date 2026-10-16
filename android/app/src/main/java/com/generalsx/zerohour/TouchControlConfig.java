@@ -143,7 +143,7 @@ final class TouchControlConfig {
         config.buttonOpacity = clamp(prefs.getFloat(PREF_BUTTON_OPACITY, 0.78f), 0.25f, 1.0f);
         try {
             JSONArray array = new JSONArray(prefs.getString(PREF_BUTTONS, "[]"));
-            for (int i = 0; i < array.length() && i < 20; ++i) {
+            for (int i = 0; i < array.length() && i < 50; ++i) {
                 JSONObject item = array.getJSONObject(i);
                 String label = item.optString("label", "?");
                 int keyCode = item.optInt("key", KeyEvent.KEYCODE_UNKNOWN);
